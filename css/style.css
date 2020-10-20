@@ -25,8 +25,9 @@ a {
 	display: block;
 	clear: both;
 }
+
 header {
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(215,215,215,.8);
 	width: 100%;
 	/* animation magic */
 	transition: all 0.4s ease-in-out;
@@ -34,7 +35,7 @@ header {
 	-moz-transition: all 0.4s ease-in-out;
 	z-index: 9999;
 	top: 0;
-	position: fixed;
+	position: sticky;
 }
 header ul {
 	float: left;
@@ -111,8 +112,8 @@ header ul li a:hover {
 	align-items: center;
 }
 .banner {
-	height: 60vh;
-	background-color: #fff;
+	height: 50vw;
+	background-color: #a9c9c9;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -308,6 +309,124 @@ footer {
 	padding: .4vh 0;
 }
 
+
+/*................................................................................................................*/
+
+.slider{
+  width: 90vw;
+  height: 50.625vw;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+  text-align: center;
+}
+
+.slides input{
+  display: none;
+  text-align: center;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+  text-align: center;
+}
+
+.slide img{
+  width: 90vw;
+  height: 50.625vw;
+  text-align: center;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 90vw;
+  margin-top: 5vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.manual-btn{
+  border: .2vw solid #40D3DC;
+  padding: .3vw;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+  margin-top: 41.6vw;
+}
+
+.navigation-auto div{
+  border: .2vw solid #40D3DC;
+  padding: .3vw;
+  border-radius: 50%;
+  transition: 1s;	
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+
+/*................................................................................................................*/
+
+
 @keyframes puterin {
 	100% {
 		transform: rotate(360deg);
@@ -325,6 +444,32 @@ footer {
 	header ul li a {
 		margin:6.8vh 1vw;
 		font-size: smaller;
+	}
+	.banner {
+		height: 37vw;
+	}
+	.slider{
+		width: 100vw;
+		height: 56.25vw;
+		border-radius: 0px;
+	}
+	.slide img{
+		width: 100vw;
+		height: 56.25vw;
+	}
+	.navigation-manual{
+		margin-top: -86.5vw;
+	}
+	.manual-btn {
+		border: .25vw  solid #40D3DC;
+  		padding: .8vw;
+	}
+	.navigation-auto{
+		margin-top: 47vw;
+	}
+	.navigation-auto div{
+		border: .25vw  solid #40D3DC;
+  		padding: .8vw;
 	}
 	.shrink1 {
 	  	margin:3.7vh 1vw;
