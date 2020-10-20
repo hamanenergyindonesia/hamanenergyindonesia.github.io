@@ -11,4 +11,11 @@
 			$("header ul li a").removeClass("shrink1");
 			$("header h1-2").removeClass("shrink2");
 		}
-	});
+	}
+	);
+
+	
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}

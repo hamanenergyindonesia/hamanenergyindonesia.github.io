@@ -7,7 +7,7 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
-.medsos {
+/*.medsos {
 	padding:10px 0;
 	background-color: #009999;
 }
@@ -15,7 +15,7 @@ a {
 	display: inline-block;
 	color: #fff;
 	margin-right: 10px;
-}
+}*/
 .container {
 	width:80%;
 	margin:0 auto;
@@ -40,17 +40,17 @@ header ul {
 	float: left;
 	width: 100%;
 	margin-top: .6vh;
-	  /*display: flex;*/
-	  flex-direction: row;
-	  flex-wrap: wrap;
-	  justify-content: flex-end;
-	  align-items: center;
-	  list-style: none;
+	/*display: flex;*/
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
 }
 header a img{
 	float: left;
 	margin:.5vh 0;
-	max-height: 88px;
+	max-height: 13vh;
 	transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
@@ -76,7 +76,7 @@ header ul li {
 	float: right;
 }
 header ul li a {
-	margin:35px 20px;
+	margin:5.3vh 1.5vw;
 	font-size: larger;
 	display: block;
 	transition:.5s;
@@ -86,21 +86,21 @@ header ul li a:hover {
 	transition:.5s;
 }
 .shrink {
-  max-height: 50px;
+  	max-height: 7.5vh;
 }
 .shrink1 {
-  margin:18px 20px;
-  font-size: unset;
+  	margin:2.6vh 1.5vw;
+  	font-size: unset;
 }
 .shrink2 {
 	margin-top:3.2vh;
 	line-height: 2.8vh;
 	margin-left: 6px;
-  font-size: unset;
+  	font-size: unset;
 }
 .active {
 	color: #009999;
-	border-bottom : 3px solid;
+	border-bottom : .5vh solid;
 }
 .cover {
 	background-image: url('../img/cover.jpg');
@@ -121,9 +121,8 @@ header ul li a:hover {
 .banner h2 {
 	color: #666;
 	z-index: 1;
-	padding: 20px 25px;
 	border:0px solid #fff;
-	font-size: 37px;
+	font-size: 2.2em;
 }
 section {
 	padding:50px 0;
@@ -138,15 +137,13 @@ section h5 {
 	text-align: left;
 	margin-top: 20px 0;
 	color: #595959;
-	font-size: 20px;
-	text-indent: 120px;
+	font-size: 1.3em;
 }
 section h6 {
 	text-align: left;
 	padding:0px 0;
 	color: #595959;
-	font-size: 20px;
-	text-indent: 120px;
+	font-size: 1.2em;
 	margin-bottom: 25px;
 }
 
@@ -166,24 +163,24 @@ section h6 {
 
 .about p {
 	color: #595959;
-	word-spacing: 5px;
-	line-height: 25px;
+	word-spacing: .35em;
+	line-height: 1.62em;
 	margin-bottom: 20px;
 	text-align: justify;
 }
 
 .projects p {
 	color: #595959;
-	word-spacing: 5px;
-	line-height: 25px;
+	word-spacing: .35em;
+	line-height: 1.62em;
 	margin-bottom: 10px;
 	text-align: justify;
 }
 
 .projects table {
 	color: #595959;
-	word-spacing: 5px;
-	line-height: 22px;
+	word-spacing: .35em;
+	line-height: 1.43em;
 	margin-bottom: 10px;
 	text-align: left;
 }
@@ -260,24 +257,24 @@ section h6 {
 }
 .icons {
 	width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .whyyouchooseus {
 	background-color: #008984;
 }
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 footer {
-	padding:30px 0;
+	padding:3vh 0;
 	background-color: #333;
 	color: #fff;
 	text-align: center;
-	font-size: 14px;
+	font-size: smaller;
 }
 .bg-loader {
 	background-color: #eee;
@@ -321,13 +318,17 @@ footer {
 	.container {
 		width:90%;
 	}
-	header h1 {
-		text-align: center;
-		float: none;
+	header a img {
+		float: left;
+		margin: 2vh 0;
 	}
-	header ul {
-		text-align: center;
-		float: none;
+	header ul li a {
+		margin:6.8vh 1vw;
+		font-size: smaller;
+	}
+	.shrink1 {
+	  	margin:3.7vh 1vw;
+	  	font-size: small;
 	}
 	.box .col-2 {
 		width:100%;
@@ -346,8 +347,17 @@ footer {
 	.icons {
 		width: 60%;
 	}
+	header a img{
+		float: left;
+		margin: 2vh 0;
+	}
+	section h5 {
+		font-size: unset;
+	}
+	section h6 {
+		font-size: unset;
+	}
 }
 
 
-
-
+	
