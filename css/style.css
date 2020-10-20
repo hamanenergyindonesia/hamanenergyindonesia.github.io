@@ -60,19 +60,6 @@ header a img{
 	display: flex;
   	justify-content: flex-start;
 }
- header h1-2 {
-	float: left;
-	margin-top:5vh;
-	line-height: 4.8vh;
-	margin-left: 10px;
-	font-size: 1.7em;
-	font-family: "Tahoma";
-	font-weight:bold;
-	color: #4d4d4d;
-	transition: all 0.4s ease-in-out;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-}
 header ul li {
 	float: right;
 }
@@ -113,7 +100,7 @@ header ul li a:hover {
 }
 .banner {
 	height: 50vw;
-	background-color: #a9c9c9;
+	background-color: #dde7ed;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -150,16 +137,17 @@ section h6 {
 
 .about {
 	padding-bottom: 50px;
+	background-color: #e6eef2;
 }
 
 .projects {
 	padding-bottom: 100px;
-	background-color: #f9f9f9;
+	background-color: #dde7ed;
 }
 
 .contact {
 	padding-bottom: 100px;
-	background-color: #f9f9f9;
+	background-color: #dde7ed;
 }
 
 .about p {
