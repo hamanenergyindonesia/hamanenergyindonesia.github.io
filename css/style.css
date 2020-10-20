@@ -60,18 +60,21 @@ header a img{
 	display: flex;
   	justify-content: flex-start;
 }
-header ul li {
+header ul.topnav li {
 	float: right;
 }
-header ul li a {
+header ul.topnav li a {
 	margin:5.3vh 1.5vw;
 	font-size: larger;
 	display: block;
 	transition:.5s;
 }
-header ul li a:hover {
+header ul.topnav li a:hover {
 	color: #009999;
 	transition:.5s;
+}
+.fontmenu {
+	padding: 0px 0px;
 }
 .shrink {
   	max-height: 7.5vh;
@@ -90,6 +93,23 @@ header ul li a:hover {
 	color: #009999;
 	border-bottom : .5vh solid;
 }
+
+
+header ul.topnav1 li {
+	display: inline-block;
+	text-align: center;
+}
+header ul.topnav1 li a {
+	margin:0 1.5vw;
+	font-size: larger;
+	display: block;
+	transition:.5s;
+}
+header ul.topnav1 li a:hover {
+	color: #009999;
+	transition:.5s;
+}
+
 .cover {
 	background-image: url('../img/cover.jpg');
 	background-size: cover;
@@ -206,16 +226,7 @@ section h6 {
 	text-align: center;
 	float: left;
 }
-.icon {
-	width:70px;
-	height:70px;
-	border:1px solid;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 70px;
-	font-size: 20px;
-	margin:0 auto;
-}
+
 
 .btn {
 	line-height: 50px;
@@ -244,7 +255,7 @@ section h6 {
 	line-height: 18px;
 	text-align: center;
 }
-.icons {
+.foto {
 	width: 100%;
 	display: block;
 	margin-left: auto;
@@ -428,6 +439,7 @@ footer {
 	header a img {
 		float: left;
 		margin: 2vh 0;
+		max-width: 45vw;
 	}
 	header ul li a {
 		margin:6.8vh 1vw;
@@ -460,8 +472,11 @@ footer {
   		padding: .8vw;
 	}
 	.shrink1 {
-	  	margin:3.7vh 1vw;
-	  	font-size: small;
+	  	font-size: smaller;
+	  	margin-top: .7vw;
+	  	}
+	.shrink {
+	  	max-width: 34vw;
 	}
 	.box .col-2 {
 		width:100%;
@@ -477,7 +492,7 @@ footer {
 		width:50%;
 		float: left;
 	}
-	.icons {
+	.foto {
 		width: 60%;
 	}
 	header a img{
@@ -490,7 +505,80 @@ footer {
 	section h6 {
 		font-size: unset;
 	}
+	header ul li a {
+		margin:3vh 1.5vw;
+	}
 }
 
 
-	
+	/* ------------------------------------------------------------------------------------*/
+	/* ------------------------------------------------------------------------------------*/
+
+
+	@media screen and (min-width: 769px) {
+		header ul.topnav li.icon {
+			display: none;
+		}
+		header ul.topnav1 {
+			display: none;
+		}
+	}
+	@media screen and (max-width: 768px) {
+	  	ul.topnav li:not(:first-child) {
+	  		display: none;
+	  	}
+	  	header ul.topnav li a {
+			margin:0vh 0vw;
+		}
+		header ul.topnav1 {
+			display: none;
+		}
+		header ul.topnav1 li a {
+			width: 100%;	
+			margin:0 1vw;
+			font-size: small;
+			display: block;
+			transition:.5s;
+		}
+	  	ul.topnav1 li {display: none;}
+	  	ul.topnav li.icon {
+	    float: right;
+	    display: inline-block;
+	    font-size: xx-large;
+	    margin-top: .8vw;
+  		}
+  		.navigation-manual {
+			display: none;
+		}
+	}
+
+	/* Class dengan nama "responsive" akan ditambahkan oleh JavaScript saat user mengklik icon. Munculnya Class ini akan mendisplay isi list menu 
+*/
+	@media screen and (max-width:768px) {
+		ul.topnav1.responsive {position: relative;}
+		ul.topnav.responsive li.icon {
+			position: absolute;
+			right: 0;
+			top: 0;	
+		}
+		ul.topnav1.responsive{
+			float: none;
+			display: inline-block;
+			text-align: center;
+			margin: 0 0;
+		}
+		ul.topnav1.responsive li {
+			float: none;
+			display: inline-grid;
+		}
+		ul.topnav1.responsive li a {
+			display: block;
+			text-align: right;
+		}
+		.active {
+			border-bottom : none
+		}
+	}
+
+	/* ------------------------------------------------------------------------------------*/
+	/* ------------------------------------------------------------------------------------*/	
