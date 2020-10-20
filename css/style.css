@@ -258,7 +258,12 @@ section h6 {
 	line-height: 18px;
 	text-align: center;
 }
-
+.icons {
+	width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .whyyouchooseus {
 	background-color: #008984;
 }
@@ -304,13 +309,14 @@ footer {
 .labelhome {
 	background-color: #006666;
 	padding: .4vh 0;
-
+}
 
 @keyframes puterin {
 	100% {
 		transform: rotate(360deg);
 	}
 }
+
 @media screen and (max-width: 768px){
 	.container {
 		width:90%;
@@ -334,12 +340,13 @@ footer {
 		margin-bottom: 20px;
 	}
 	.box .col-6 {
-		width:100%;
-		float: none;
-		margin-bottom: 20px;
+		width:50%;
+		float: left;
+	}
+	.icons {
+		width: 60%;
 	}
 }
-
 
 
 
