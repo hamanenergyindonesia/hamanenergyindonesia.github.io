@@ -94,10 +94,12 @@ header ul.topnav li a:hover {
 	border-bottom : .5vh solid;
 }
 
-
+header ul.topnav1 {
+	display: inline-block;
+}
 header ul.topnav1 li {
 	display: inline-block;
-	text-align: center;
+	margin-top: 0;
 }
 header ul.topnav1 li a {
 	margin:0 1.5vw;
@@ -301,7 +303,10 @@ footer {
 .label {
 	background-color: #009999;
 	color: #fff;
-	padding: 10px 0;
+	padding: .5vw 0;
+}
+.label p {
+	font-size: smaller;
 }
 .labelhome {
 	background-color: #006666;
@@ -534,7 +539,7 @@ footer {
 			display: none;
 		}
 		header ul.topnav1 li a {
-			width: 100%;	
+			width: 100%;
 			margin:0 1vw;
 			font-size: small;
 			display: block;
@@ -562,20 +567,21 @@ footer {
 			top: 0;	
 		}
 		ul.topnav1.responsive{
-			float: none;
 			display: inline-block;
 			text-align: center;
 			margin: 0 0;
 		}
 		ul.topnav1.responsive li {
-			float: none;
 			display: inline-grid;
+			text-align: center;
 		}
 		ul.topnav1.responsive li a {
 			display: block;
-			text-align: right;
+			text-align: center;
+			margin:0 1.9vw;
 		}
 		.active {
+			color: #009999;
 			border-bottom : none
 		}
 	}
