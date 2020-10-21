@@ -356,6 +356,11 @@ footer {
   height: 50.625vw;
   text-align: center;
 }
+.slide iframe{
+  width: 90vw;
+  height: 50.625vw;
+  text-align: center;
+}
 
 /*css for manual slide navigation*/
 
@@ -459,6 +464,10 @@ footer {
 		border-radius: 0px;
 	}
 	.slide img{
+		width: 100vw;
+		height: 56.25vw;
+	}
+	.slide iframe{
 		width: 100vw;
 		height: 56.25vw;
 	}
