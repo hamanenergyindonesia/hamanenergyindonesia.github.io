@@ -40,7 +40,7 @@ header {
 header ul {
 	float: left;
 	width: 100%;
-	margin-top: .6vh;
+	margin-top: .4vh;
 	/*display: flex;*/
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -50,8 +50,7 @@ header ul {
 }
 header a img{
 	float: left;
-	margin:.5vh 0;
-	max-height: 13vh;
+	max-width: 24vw;
 	transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
@@ -64,8 +63,8 @@ header ul.topnav li {
 	float: right;
 }
 header ul.topnav li a {
-	margin:5.3vh 1.5vw;
-	font-size: larger;
+	margin:2.2vw 1.5vw;
+	font-size: 1.4vw;
 	display: block;
 	transition:.5s;
 }
@@ -74,20 +73,14 @@ header ul.topnav li a:hover {
 	transition:.5s;
 }
 .fontmenu {
-	padding: 0px 0px;
+	padding: 0 0;
 }
 .shrink {
-  	max-height: 7.5vh;
+  	max-width: 14.6vw;
 }
-.shrink1 {
-  	margin:2.6vh 1.5vw;
-  	font-size: unset;
-}
-.shrink2 {
-	margin-top:3.2vh;
-	line-height: 2.8vh;
-	margin-left: 6px;
-  	font-size: unset;
+header ul.topnav li a.shrink1 {
+  	margin: 1.15vw 1.5vw;
+  	font-size: 1.17vw;
 }
 .active {
 	color: #009999;
@@ -103,7 +96,6 @@ header ul.topnav1 li {
 }
 header ul.topnav1 li a {
 	margin:0 1.5vw;
-	font-size: larger;
 	display: block;
 	transition:.5s;
 }
@@ -121,6 +113,7 @@ header ul.topnav1 li a:hover {
 	align-items: center;
 }
 .banner {
+	padding: 3em 0;
 	height: 50vw;
 	background-color: #dde7ed;
 	position: relative;
@@ -134,18 +127,21 @@ header ul.topnav1 li a:hover {
 	border:0px solid #fff;
 	font-size: 2.2em;
 }
+section.about {
+	padding:1em 0;
+	margin: 0;
+}
 section {
-	padding:50px 0;
+	padding:1em 0;
 }
 section h3 {
 	text-align: center;
-	padding:20px 0;
+	padding:1em 0;
 	color: #009999;
-	margin-bottom: 25px;
 }
 section h5 {
 	text-align: left;
-	margin-top: 20px 0;
+	margin-top: 1.5em 0;
 	color: #595959;
 	font-size: 1.3em;
 }
@@ -154,21 +150,22 @@ section h6 {
 	padding:0px 0;
 	color: #595959;
 	font-size: 1.2em;
-	margin-bottom: 25px;
+	margin-bottom: 1.3em;
 }
 
 .about {
-	padding-bottom: 50px;
+	padding-bottom: 0;
 	background-color: #e6eef2;
 }
 
 .projects {
-	padding-bottom: 100px;
+	padding-bottom: 5em;
 	background-color: #dde7ed;
 }
 
 .contact {
-	padding-bottom: 100px;
+	padding-bottom: 5em;
+	padding-top: 3em;
 	background-color: #dde7ed;
 }
 
@@ -176,7 +173,7 @@ section h6 {
 	color: #595959;
 	word-spacing: .35em;
 	line-height: 1.62em;
-	margin-bottom: 20px;
+	margin-bottom: 1.4em;
 	text-align: justify;
 }
 
@@ -184,7 +181,7 @@ section h6 {
 	color: #595959;
 	word-spacing: .35em;
 	line-height: 1.62em;
-	margin-bottom: 10px;
+	margin-bottom: .7em;
 	text-align: justify;
 }
 
@@ -192,38 +189,48 @@ section h6 {
 	color: #595959;
 	word-spacing: .35em;
 	line-height: 1.43em;
-	margin-bottom: 10px;
+	margin-bottom: 0.7em;
 	text-align: left;
 }
 
 .box {
 	color: #009999;
-	margin-bottom: 25px;
+	margin-bottom: 1.7em;
 }
 .box:after {
 	content: '';
 	display: block;
 	clear: both;
 }
-.box .col-2 {
+.imgstruk {
+	width:80%;
+}
+.imgwycs {
 	width:50%;
-	padding:20px;
+}
+.imgproj {
+	width:90%;
+}
+.box .col-2 {
+	width:40%;
+	margin: 0 5%;
+	padding:1.3em;
 	box-sizing: border-box;
 	text-align: center;
 	float: left;
 }
 .box .contactus {
 	width:50%;
-	padding:20px;
+	padding:1.5em;
 	box-sizing: border-box;
 	text-align: center;
 	float: right;
 }
 .box .col-6 {
 	width:16.66%;
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-bottom: 20px;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+	padding-bottom: 1.5em;
 	box-sizing: border-box;
 	text-align: center;
 	float: left;
@@ -231,30 +238,33 @@ section h6 {
 
 
 .btn {
-	line-height: 50px;
+	line-height: 1.7em;
+	margin-bottom: 1000px;
 	border: 1px solid;
-	padding: 15px;
+	padding: .7em;
+	color: #3b3b3b;
+	text-align: justify;
 }
 .btn:hover {
 	background-color: #009999;
 	color: #ffffff;
 }
 .box .col-2 h4 {
-	margin:20px 0;
+	margin:1.3em 0;
 }
 .box .contactus h4 {
-	margin:20px 0;
+	margin:.6em 0;
 	color: #595959;
 }
 .box .contactus p {
 	color: #595959;
-	line-height: 23px;
+	line-height: 1.4em;
 }
 .box .col-6 p {
-	margin: 10px 0;
+	margin: .8em 0;
 	color: #595959;
-	word-spacing: 0px;
-	line-height: 18px;
+	word-spacing: 0em;
+	line-height: 1.2em;
 	text-align: center;
 }
 .foto {
@@ -441,15 +451,6 @@ footer {
 	.container {
 		width:90%;
 	}
-	header a img {
-		float: left;
-		margin: 2vh 0;
-		max-width: 45vw;
-	}
-	header ul li a {
-		margin:6.8vh 1vw;
-		font-size: smaller;
-	}
 	.banner {
 		height: 37vw;
 	}
@@ -476,42 +477,141 @@ footer {
 		border: .25vw  solid #40D3DC;
   		padding: .8vw;
 	}
-	.shrink1 {
-	  	font-size: smaller;
-	  	margin-top: .7vw;
-	  	}
-	.shrink {
-	  	max-width: 34vw;
+	.box {
+		margin-bottom: 1em;
 	}
 	.box .col-2 {
 		width:100%;
 		float: none;
-		margin-bottom: 20px;
-	}
+		margin: 0 0%;
+		padding-top: 0;
+		box-sizing: border-box;
+		text-align: center;
+		float: left;
+		}
 	.box .contactus {
 		width:100%;
-		float: none;
-		margin-bottom: 20px;
+		display: grid;
+		margin-bottom: 1.3em;
+
+		padding:0em;
+		box-sizing: border-box;
+		text-align: center;
 	}
 	.box .col-6 {
-		width:50%;
+		width:33.3%;
 		float: left;
+		padding-right: .5em;
+		padding-left: .5em;
+		padding-bottom: .7em;
 	}
 	.foto {
-		width: 60%;
+		width: 70%;
 	}
-	header a img{
-		float: left;
-		margin: 2vh 0;
+	.navigation-manual {
+		display: none;
+	}
+	section h3 {
+		font-size: .95em;
+		padding: .7em;
+	}
+	.about p {
+		word-spacing: .2em;
+		line-height: 1.55em;
+		margin-bottom: 1em;
+		font-size: .83em;
+	}
+	.btn {
+		line-height: 1.7em;
+		padding: .45em;
+		font-size: .83em;
+	}
+	.imgstruk {
+		width:90%;
+	}
+	.imgwycs {
+		width:80%;
+	}
+	.whyyouchooseus {
+		padding: 1.1em 0;
+	}
+	.box .col-6 p {
+		margin: .2em 0;
+		word-spacing: 0em;
+		line-height: 1.2em;
+		font-size: .68em;
+	}
+	.projects {
+		padding-bottom: 1em;
+	}
+	.projects p {
+		word-spacing: .17em;
+		line-height: 1.55em;
+		margin-bottom: .3em;
+		font-size: .8em;
+	}
+	.projects table {
+		word-spacing: .17em;
+		line-height: 1.55em;
+		margin-bottom: .3em;
+		font-size: .8em;
+	}
+	.contact {
+		padding-bottom: 1em;
+		padding-top: 2em;
+	}
+	.contactus h4 {
+		font-size: 2.7vw;
+	}
+	.contactus p {
+		line-height: 1.4em;
+		font-size: 2.7vw;
 	}
 	section h5 {
-		font-size: unset;
+		font-size: 3.5vw;
 	}
 	section h6 {
-		font-size: unset;
+		font-size: 3.3vw;
 	}
-	header ul li a {
-		margin:3vh 1.5vw;
+
+	header a img {
+		float: left;
+		margin: 1vw 0;
+		max-width: 45vw;
+	}
+	header ul.topnav li a {
+		margin:0 0;
+		font-size: 8vw;
+	}
+	header ul.topnav li.icon {
+	    float: right;
+	    display: inline-block;
+	    margin-top: .8vw;
+  		}
+  	ul.topnav li:not(:first-child) {
+		display: none;
+	}
+	header ul.topnav1 {
+		display: none;
+	}
+	header ul.topnav1 li a {
+		width: 100%;
+		margin:0 1vw;
+		display: block;
+		transition:.5s;
+	}
+	ul.topnav1 li {
+		display: none;
+	}
+	header ul.topnav li a.shrink1 {
+	  	font-size: 7vw;
+	  	margin: 0 0;
+	  	}
+	.shrink {
+	  	max-width: 34vw;
+	}
+	section.contact div.container div.box div:first-child {
+		display: none;
 	}
 }
 
@@ -521,38 +621,13 @@ footer {
 
 
 	@media screen and (min-width: 769px) {
+		section.contact div.container div.box div:last-child {
+			display: none;
+		}
 		header ul.topnav li.icon {
 			display: none;
 		}
 		header ul.topnav1 {
-			display: none;
-		}
-	}
-	@media screen and (max-width: 768px) {
-	  	ul.topnav li:not(:first-child) {
-	  		display: none;
-	  	}
-	  	header ul.topnav li a {
-			margin:0vh 0vw;
-		}
-		header ul.topnav1 {
-			display: none;
-		}
-		header ul.topnav1 li a {
-			width: 100%;
-			margin:0 1vw;
-			font-size: small;
-			display: block;
-			transition:.5s;
-		}
-	  	ul.topnav1 li {display: none;}
-	  	ul.topnav li.icon {
-	    float: right;
-	    display: inline-block;
-	    font-size: xx-large;
-	    margin-top: .8vw;
-  		}
-  		.navigation-manual {
 			display: none;
 		}
 	}
@@ -561,11 +636,6 @@ footer {
 */
 	@media screen and (max-width:768px) {
 		ul.topnav1.responsive {position: relative;}
-		ul.topnav.responsive li.icon {
-			position: absolute;
-			right: 0;
-			top: 0;	
-		}
 		ul.topnav1.responsive{
 			display: inline-block;
 			text-align: center;
@@ -578,7 +648,16 @@ footer {
 		ul.topnav1.responsive li a {
 			display: block;
 			text-align: center;
-			margin:0 1.9vw;
+			margin-left: 1.9vw;
+			margin-right: 1.9vw;
+			margin-bottom: 1vw;
+			font-size: 3vw;
+		}
+		header ul.topnav.responsive0 a img {
+			margin-bottom: 0;
+			transition: all 0.4s ease-in-out;
+			-webkit-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
 		}
 		.active {
 			color: #009999;
