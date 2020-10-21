@@ -140,17 +140,16 @@ section h3 {
 	color: #009999;
 }
 section h5 {
-	text-align: left;
+	text-align: center;
 	margin-top: 1.5em 0;
 	color: #595959;
 	font-size: 1.3em;
 }
 section h6 {
-	text-align: left;
+	text-align: center;
 	padding:0px 0;
 	color: #595959;
 	font-size: 1.2em;
-	margin-bottom: 1.3em;
 }
 
 .about {
